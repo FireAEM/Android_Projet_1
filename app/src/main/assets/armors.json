@@ -1,0 +1,23 @@
+[
+  {
+    "id": "armor_1",
+    "name": "Armure en Cuir",
+    "price": 1,
+    "protection": 1,
+    "level": 1
+  },
+  {
+    "id": "armor_2",
+    "name": "Armure en Acier",
+    "price": 5,
+    "protection": 3,
+    "level": 2
+  },
+  {
+    "id": "armor_3",
+    "name": "Armure Magique",
+    "price": 10,
+    "protection": 5,
+    "level": 3
+  }
+]

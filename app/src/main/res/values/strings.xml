@@ -1,3 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">ProjectAppTest</string>
+    <string name="app_name">ProjectApp</string>
+    <string name="equipped_armor">Armure équipée</string>
+    <string name="equipped_weapon">Arme équipée</string>
 </resources>

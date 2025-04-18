@@ -1,0 +1,58 @@
+[
+  {
+    "id": "gobelin",
+    "name": "Gobelin",
+    "lifePoints": 10,
+    "damage": 3,
+    "armor": 1
+  },
+  {
+    "id": "orc",
+    "name": "Orc",
+    "lifePoints": 15,
+    "damage": 5,
+    "armor": 2
+  },
+  {
+    "id": "dragon",
+    "name": "Dragon",
+    "lifePoints": 15,
+    "damage": 10,
+    "armor": 3
+  },
+  {
+    "id": "squelette",
+    "name": "Squelette",
+    "lifePoints": 6,
+    "damage": 2,
+    "armor": 1
+  },
+  {
+    "id": "slime",
+    "name": "Slime",
+    "lifePoints": 8,
+    "damage": 2,
+    "armor": 0
+  },
+  {
+    "id": "bandit",
+    "name": "Bandit",
+    "lifePoints": 12,
+    "damage": 4,
+    "armor": 1
+  },
+  {
+    "id": "fantôme",
+    "name": "Fantôme",
+    "lifePoints": 10,
+    "damage": 6,
+    "armor": 0
+  },
+  {
+    "id": "minotaure",
+    "name": "Minotaure",
+    "lifePoints": 18,
+    "damage": 7,
+    "armor": 2
+  }
+]

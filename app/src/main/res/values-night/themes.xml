@@ -1,7 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+    <!-- Thème de base pour l'application en mode nuit -->
     <style name="Base.Theme.ProjectAppTest" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
+        <!-- Personnalisez ici vos autres attributs pour le mode sombre -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
     </style>
+
+    <style name="Theme.ProjectAppTest" parent="Base.Theme.ProjectAppTest" />
 </resources>

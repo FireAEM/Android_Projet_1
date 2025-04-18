@@ -1,0 +1,26 @@
+[
+  {
+    "id": "weapon_1",
+    "name": "Épée en Bois",
+    "price": 1,
+    "damage": 1,
+    "level": 1,
+    "type": "SWORD"
+  },
+  {
+    "id": "weapon_2",
+    "name": "Masse en Fer",
+    "price": 5,
+    "damage": 3,
+    "level": 2,
+    "type": "MACE"
+  },
+  {
+    "id": "weapon_3",
+    "name": "Hache en Acier",
+    "price": 10,
+    "damage": 5,
+    "level": 3,
+    "type": "AXE"
+  }
+]

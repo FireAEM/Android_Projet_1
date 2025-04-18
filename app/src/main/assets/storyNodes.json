@@ -1,0 +1,211 @@
+[
+  {
+    "id": "root",
+    "title": "intro",
+    "context": "Bonsoir, voyageur audacieux, Devant toi, le monde semble suspendu dans une étrange tranquillité. Autour de toi, les vastes champs dorés par la lueur d’un soleil mourant s’étendent à perte de vue, ondulant doucement sous la brise du crépuscule. En arrière-plan, des collines sombres se profilent, les ombres des arbres se dessinant comme des sentinelles silencieuses. À ta droite, un vieux cimetière repose, entouré d’un muret de pierres recouvertes de mousse. Les croix penchées et les tombes oubliées racontent des histoires d’un autre temps. Une légère brume s’élève du sol, ajoutant une aura presque surnaturelle à ce lieu déjà empreint de mystère. Devant toi, le sentier qui mène au confort de ton logis serpente paisiblement entre les champs, te promettant chaleur et repos, loin des aventures et des dangers de la nuit. deux chemins s’ouvrent à toi : Accepter une mission pour le cimetière ou Rentrer chez toi.",
+    "type": "EXPLORATION",
+    "requiredItem": null,
+    "newItem": null,
+    "endingPoint": 0,
+    "endingPointType": "MID_END",
+    "choices": ["1", "12"]
+  },
+  {
+    "id": "1",
+    "title": "début",
+    "context": "En suivant le sentier étroit bordé d’herbes hautes, le voyageur s’approche du cimetière. Le chemin serpente doucement, parsemé de cailloux et tapissé de mousse, témoignant du passage du temps et de la rare fréquentation de ce lieu. Les champs alentour s’estompent peu à peu, remplacés par des arbres noueux dont les branches semblent former une arche naturelle menant à l’entrée. Arrivé au portail du cimetière, un vieux portail de fer forgé, rouillé par les années, se dresse devant lui. Ses grincements, même sous la légère brise, ajoutent une atmosphère pesante à l’endroit. Juste à côté de cette entrée se trouve un cabanon de bois à l’allure délabrée, ses planches usées par le temps et son toit incliné comme sous le poids de nombreux hivers. Une faible lumière semble émaner d'une fente entre les volets fermés, comme une invitation silencieuse. Le choix s’impose alors : franchir le portail du cimetière, avec ses pierres tombales alignées dans une étrange quiétude, ou bien pousser la porte du cabanon, et découvrir ce qu’il renferme.",
+    "type": "EXPLORATION",
+    "requiredItem": null,
+    "newItem": null,
+    "endingPoint": 0,
+    "endingPointType": "MID_END",
+    "choices": ["2", "3"]
+  },
+  {
+    "id": "2",
+    "title": "cabanon",
+    "context": "Le voyageur avance d’un pas hésitant vers le cabanon, scrutant les détails de sa façade usée. En pressant son oreille contre la porte, il entend un léger cliquetis : sur un vieux clou à côté du chambranle pend une **lampe à huile**. Il la décroche, la nettoie sommairement et l’allume d’une étincelle. La lumière vacillante éclaire l’intérieur : un simple mobilier ancien, quelques étagères vides et une trappe dissimulée sous un vieux tapis. Avec la lampe en main, le voyageur se sent plus à l’aise pour explorer. Veut-il soulever la trappe ou retourner au cimetière ?",
+    "type": "EXPLORATION",
+    "requiredItem": null,
+    "newItem": "lampe",
+    "endingPoint": 0,
+    "endingPointType": "MID_END",
+    "choices": ["13", "3"]
+  },
+  {
+    "id": "3",
+    "title": "entrée",
+    "context": "Le voyageur franchit le vieux portail rouillé du cimetière, dont les grincements semblent résonner dans le silence de la nuit. Une légère brume danse autour de ses pieds, enveloppant les lieux d'une atmosphère irréelle. Les pierres tombales, certaines penchées ou brisées par les temps, se dressent comme de sombres silhouettes. Soudain, son regard se fixe sur une figure au loin. Devant une crypte massive ornée de gravures effacées, un homme se tient immobile, une lanterne à la main. Le voyageur serre la lanière de son sac. Va-t-il s’approcher ? ",
+    "type": "EXPLORATION",
+    "requiredItem": null,
+    "newItem": null,
+    "endingPoint": 0,
+    "endingPointType": "MID_END",
+    "choices": ["4"]
+  },
+  {
+    "id": "4",
+    "title": "gardien_1",
+    "context": "Le voyageur s’approche, et le gardien de la crypte déclare d’une voix grave : « Pour entrer, il faudra cette clé – 15 pièces d’or. » Si le voyageur a l’or nécessaire, il peut payer ; sinon, le gardien l’invite à chercher parmi les tombes.",
+    "type": "MERCHANT",
+    "requiredItem": null,
+    "newItem": "clef",
+    "endingPoint": 2,
+    "endingPointType": "GOOD_END",
+    "choices": ["5", "11"]
+  },
+  {
+    "id": "5",
+    "title": "choix_tombes",
+    "context": "Le voyageur progresse parmi les tombes à la recherche d’indices. Trois sépultures s’offrent à lui : la première brisée, la deuxième penchée, la troisième fraîchement retournée.",
+    "type": "EXPLORATION",
+    "requiredItem": null,
+    "newItem": null,
+    "endingPoint": 0,
+    "endingPointType": "MID_END",
+    "choices": ["6", "7", "8"]
+  },
+  {
+    "id": "6",
+    "title": "tombe_récente",
+    "context": "Devant la tombe récente, le voyageur creuse et découvre un cadavre tenant une bourse. En l’arrachant, il y trouve 5 pièces d’or qu’il glisse dans sa poche, puis rebouche la sépulture.",
+    "type": "EXPLORATION",
+    "requiredItem": null,
+    "newItem": "bourse",
+    "endingPoint": 0,
+    "endingPointType": "MID_END",
+    "choices": ["10"]
+  },
+  {
+    "id": "7",
+    "title": "tombe_penchee",
+    "context": "Le cercueil de la tombe penchée est vide. Déçu, le voyageur referme délicatement le cercueil et retourne au gardien.",
+    "type": "EXPLORATION",
+    "requiredItem": null,
+    "newItem": null,
+    "endingPoint": 0,
+    "endingPointType": "MID_END",
+    "choices": ["10"]
+  },
+  {
+    "id": "8",
+    "title": "tombe_brisee",
+    "context": "En ouvrant la première tombe, un squelette animé jaillit ! Le voyageur combat vaillamment et terrasse la créature. Il fouille ensuite le cercueil : vide. Il repart alors vers la crypte.",
+    "type": "COMBAT",
+    "requiredItem": null,
+    "newItem": null,
+    "endingPoint": 0,
+    "endingPointType": "MID_END",
+    "choices": ["9"]
+  },
+  {
+    "id": "9",
+    "title": "après_combat",
+    "context": "Le squelette est vaincu, mais il ne reste rien dans le cercueil. Frustré, le voyageur regagne la crypte, son épée à la main.",
+    "type": "EXPLORATION",
+    "requiredItem": null,
+    "newItem": null,
+    "endingPoint": 0,
+    "endingPointType": "MID_END",
+    "choices": ["10"]
+  },
+  {
+    "id": "10",
+    "title": "gardien_2",
+    "context": "De retour, le gardien l’interroge sur sa recherche parmi les tombes. Le voyageur, à bout de forces, répond qu’il n’a rien trouvé.",
+    "type": "MERCHANT",
+    "requiredItem": null,
+    "newItem": null,
+    "endingPoint": 3,
+    "endingPointType": "BAD_END",
+    "choices": ["11", "14"]
+  },
+  {
+    "id": "11",
+    "title": "crypte",
+    "context": "Le voyageur, la bourse de 15 pièces en main, remet l’or au gardien. Celui-ci vérifie et lui tend la clé de la crypte : « Es-tu prêt ? »",
+    "type": "COMBAT",
+    "requiredItem": "clef",
+    "newItem": null,
+    "endingPoint": 0,
+    "endingPointType": "MID_END",
+    "choices": ["15"]
+  },
+  {
+    "id": "12",
+    "title": "dodo",
+    "context": "Le voyageur, prudent, choisit de rentrer chez lui. Dans sa boîte sous la paillasse, il trouve 5 pièces d’or et une vieille clé rouillée dénichée il y a deux jours en forêt.",
+    "type": "EXPLORATION",
+    "requiredItem": null,
+    "newItem": "vieille_clef",
+    "endingPoint": 1,
+    "endingPointType": "GOOD_END",
+    "choices": ["1"]
+  },
+  {
+    "id": "13",
+    "title": "déception",
+    "context": "Grâce à la veilleuse clé (vieille_clef), le voyageur ouvre enfin la porte du cabanon. À l’intérieur, seule une luciole danse dans la pénombre. Déçu, il referme la porte.",
+    "type": "EXPLORATION",
+    "requiredItem": "vieille_clef",
+    "newItem": null,
+    "endingPoint": 2,
+    "endingPointType": "MID_END",
+    "choices": []
+  },
+  {
+    "id": "14",
+    "title": "déçu",
+    "context": "Le gardien déclare que l’échec est aussi une réponse. Il indique le chemin du retour, et le voyageur repart, les épaules lourdes.",
+    "type": "EXPLORATION",
+    "requiredItem": null,
+    "newItem": null,
+    "endingPoint": 4,
+    "endingPointType": "MID_END",
+    "choices": []
+  },
+  {
+    "id": "15",
+    "title": "commission",
+    "context": "Dans la crypte, deux squelettes s’animent pour protéger les lieux. Le voyageur livre un combat acharné et sort victorieux. De retour au village, la guilde le récompense pour avoir sécurisé le cimetière.",
+    "type": "EXPLORATION",
+    "requiredItem": null,
+    "newItem": null,
+    "endingPoint": 0,
+    "endingPointType": "MID_END",
+    "choices": []
+  },
+  {
+    "id": "ending_good",
+    "title": "Fin Heureuse",
+    "context": "Triomphant, le voyageur rentre chez lui, fier d’avoir protégé le village sans trahir ses principes. Il dépose la clé et la bourse sur la table et savoure un repos bien mérité.",
+    "type": "ENDING",
+    "requiredItem": null,
+    "newItem": null,
+    "endingPoint": 0,
+    "endingPointType": "GOOD_END",
+    "choices": []
+  },
+  {
+    "id": "ending_mid",
+    "title": "Fin Moyenne",
+    "context": "L’aventure tant attendue n’a jamais eu lieu. Mais en rentrant, le voyageur découvre que la vraie quête est celle de la découverte de soi.",
+    "type": "ENDING",
+    "requiredItem": null,
+    "newItem": null,
+    "endingPoint": 0,
+    "endingPointType": "MID_END",
+    "choices": []
+  },
+  {
+    "id": "ending_bad",
+    "title": "Fin Tragique",
+    "context": "Rentré chez lui, le voyageur se demande si les choix qu’il a faits étaient bons. La véritable épreuve commence maintenant, celle de se retrouver.",
+    "type": "ENDING",
+    "requiredItem": null,
+    "newItem": null,
+    "endingPoint": 0,
+    "endingPointType": "BAD_END",
+    "choices": []
+  }
+]

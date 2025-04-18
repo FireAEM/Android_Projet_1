@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="activity_main_background">#FFFFFFFF</color>
+    <color name="main_background">#000000</color>
+    <color name="secondary_background">#F5F5F5</color>
+    <color name="main_text">#FFFFFF</color>
 </resources>

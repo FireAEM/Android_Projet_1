@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/secondary_background">
+
+    <!-- Informations de l'item -->
+    <TextView
+        android:id="@+id/textItemInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nom | Prix | Dégâts/Protection | Niveau | Type"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <!-- Boutons équiper / supprimer -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonEquip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Équiper"
+            android:textColor="@color/main_text"
+            android:backgroundTint="@color/main_background"
+            app:cornerRadius="50dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Supprimer"
+            android:textColor="@color/main_text"
+            android:backgroundTint="@color/main_background"
+            app:cornerRadius="50dp"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+</LinearLayout>

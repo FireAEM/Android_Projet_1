@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Header d'achat moderne -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/layoutHeaderPurchase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/secondary_background"
+        app:cardElevation="4dp"
+        android:layout_marginBottom="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <!-- Texte principal -->
+            <TextView
+                android:id="@+id/textViewHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Achat"
+                android:fontWeight="500"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textViewLife"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_chainStyle="spread" />
+
+            <!-- Affichage des points de vie -->
+            <TextView
+                android:id="@+id/textViewLife"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PV: 20"
+                android:fontWeight="300"
+                app:layout_constraintStart_toEndOf="@id/textViewHeader"
+                app:layout_constraintEnd_toStartOf="@+id/textViewMoney"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <!-- Affichage de l'or -->
+            <TextView
+                android:id="@+id/textViewMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Or: 10"
+                android:fontWeight="300"
+                app:layout_constraintStart_toEndOf="@id/textViewLife"
+                app:layout_constraintEnd_toStartOf="@+id/buttonInventory"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <!-- Bouton Inventaire -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonInventory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inventaire"
+                android:textColor="@color/main_text"
+                android:backgroundTint="@color/main_background"
+                app:cornerRadius="50dp"
+                app:layout_constraintStart_toEndOf="@id/textViewMoney"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Liste des items à vendre -->
+    <LinearLayout
+        android:id="@+id/layoutItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp">
+    </LinearLayout>
+
+    <!-- Bouton Continuer -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continuer"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/main_text"
+        android:backgroundTint="@color/main_background"
+        app:cornerRadius="50dp" />
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Header de combat -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/layoutHeaderCombat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/secondary_background"
+        app:cardElevation="4dp"
+        android:layout_marginBottom="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <!-- Titre Combat ! -->
+            <TextView
+                android:id="@+id/textViewHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Combat !"
+                android:fontWeight="500"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textViewLife"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_chainStyle="spread" />
+
+            <!-- PV -->
+            <TextView
+                android:id="@+id/textViewLife"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PV: 20"
+                android:fontWeight="300"
+                app:layout_constraintStart_toEndOf="@id/textViewHeader"
+                app:layout_constraintEnd_toStartOf="@+id/textViewMoney"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <!-- Or -->
+            <TextView
+                android:id="@+id/textViewMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Or: 10"
+                android:fontWeight="300"
+                app:layout_constraintStart_toEndOf="@id/textViewLife"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Informations de l'ennemi -->
+    <TextView
+        android:id="@+id/textViewEnemyInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Infos de l'ennemi"
+        android:padding="4dp"
+        android:gravity="center" />
+
+    <!-- Contexte du combat -->
+    <TextView
+        android:id="@+id/textViewContext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contexte du combat..."
+        android:padding="4dp"
+        android:gravity="center" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Boutons d'action-->
+    <LinearLayout
+        android:id="@+id/layoutActions"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonAttack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attaquer"
+            android:layout_margin="4dp"
+            android:textColor="@color/main_text"
+            android:backgroundTint="@color/main_background"
+            app:cornerRadius="50dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonBlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bloquer"
+            android:layout_margin="4dp"
+            android:textColor="@color/main_text"
+            android:backgroundTint="@color/main_background"
+            app:cornerRadius="50dp" />
+    </LinearLayout>
+</LinearLayout>

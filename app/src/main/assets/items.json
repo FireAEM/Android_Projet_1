@@ -1,0 +1,22 @@
+[
+  {
+    "id": "lampe",
+    "name": "Lampe à huile",
+    "price": 5
+  },
+  {
+    "id": "clef",
+    "name": "Clé ancienne",
+    "price": 0
+  },
+  {
+    "id": "bourse",
+    "name": "Bourse de pièces d'or",
+    "price": 0
+  },
+  {
+    "id": "vieille_clef",
+    "name": "Vieille clé rouillée",
+    "price": 0
+  }
+]
